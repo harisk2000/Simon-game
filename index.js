@@ -25,9 +25,12 @@ function starter() {
   actualSequence = [];
   numberOfClick = 0;
   levelNumber = 1;
-  $(document).one("keydown click", function() {
+  $(".start").one("click", function() {
     $("h1").text("Level 1");
-    randomColorSelector();
+    setTimeout(function (){
+    randomColorSelector();  
+    },500)
+
 
   });
 }
@@ -65,7 +68,7 @@ $(".btn").on("click", function() {
     setTimeout(function() {
       $("body").removeClass("game-over");
     }, 100);
-    $("h1").text("Game Over,Press Any Key to Restart");
+    $("h1").html("Game Over,Press <button class = 'start restart' type='button' name='button'>Restart");
     starter();
   }
 });

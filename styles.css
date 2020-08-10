@@ -18,7 +18,34 @@ body {
   margin: auto;
 
 }
-
+.instructions{
+  font-family: 'Press Start 2P', cursive;
+  font-size: 100%;
+  margin:  5%;
+  line-height: 1.5;
+  color: #FEF2BF;
+}
+@media (max-width:1028px) {
+  .instructions{
+    font-size: 50%;
+  }
+}
+.instructions-text{
+  text-align: justify;
+}
+.start{
+  background-color:#FEF2BF;
+  display: inline-block;
+height: 100px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 3rem;
+width:300px;
+  border: 5px solid black;
+  border-radius: 10%;
+}
+.restart{
+  width: 400px;
+}
 .btn {
   margin: 25px;
   display: inline-block;
